@@ -1,5 +1,5 @@
 # **colab_stable_diffusion_webui**
--[![](https://img.shields.io/static/v1?message=Open%20in%20Colab&logo=googlecolab&labelColor=5c5c5c&color=0f80c1&label=%20&style=flat)](https://colab.research.google.com/github/YoungerKayn/colab_stable_diffusion/blob/main/%E4%BA%91stable_diffusion(%E4%BF%AE%E5%A4%8D%E6%8C%96%E7%9F%BF%E5%AB%8C%E7%96%91).ipynb)<br>
+-[![](https://img.shields.io/static/v1?message=Open%20in%20Colab&logo=googlecolab&labelColor=5c5c5c&color=0f80c1&label=%20&style=flat)](https://colab.research.google.com/github/YoungerKayn/colab_stable_diffusion/blob/main/stable_diffusion.ipynb)<br>
 
 
 ### 关于谷歌colab
@@ -25,51 +25,3 @@
  - 生成图的速度与执行代码的速度与网速无关，你就算断网几分钟他也在执行
  - 如果要使用手机进行局部绘图请使用Edge浏览器，谷歌浏览器不兼容
  - there's not enough precision to represent the picture的解决方式是切换其他VAE，或者4、运行时勾选全精度，但生成图的速度会下降一半
-
-## Update?
-### v2.0.8(23/06/01)
-- mod下载单元采用线程池并行下载
-### v2.0.7(23/05/28)
-- 增加生成图片自动保存到本地设备的脚本
-- 图片信息模块读取图片不是sd时，会推荐跳转到tagger模块
-### v2.0.6(23/05/25)
-- 因[xformers](https://github.com/facebookresearch/xformers)更新到0.0.20取消torch的下载，大幅节省下载时间
-- 新增中译提示词[all-in-one](https://github.com/Physton/sd-webui-prompt-all-in-one)
-### v2.0.5(23/05/19)
-- torch问题已修复
-### v.2.0.5 (23/05/14)
-- 优化了下载。用LCS算法对mod的下载进行最小化更新
-- 增加sd原版ui下暗配色为可选启动项
-### v.2.0.4 (23/05/12)
-- 增加openpose3d插件
-- 增加推荐mod文档下载单元格
-- 增加自定义插件和vae方法
-### v.2.0.4 (23/05/09)
-- 增加了不挂载云盘运行的选项
-### v.2.0.3 (23/05/03)
-- 根据大版本更新修复了脚本
-- 默认UI改回[Automatic111](https://github.com/AUTOMATIC1111/stable-diffusion-webui)，anapnoe为可选择
-### v.2.0.2 (23/04/29)
-- 内存泄露问题已解决
-- 优化了mod管理单元的交互，支持切换文档了
-### v.2.0.1 (23/04/27)
-- 改用了更好更适配的ui系统，来源[anapnoe](https://github.com/anapnoe/stable-diffusion-webui-ux)
-- 用指令一定程度解决了mod切换内存不足的问题
-- 解决了图生图某些特定尺寸无法生成的问题
-- 配置了ngrok加速
-### v.2.0.0 (23/04/27)
-- 增加了mod增删改查系统
-- 重构mod下载模块，不需要再用云盘保存mod
-### v.1.1.4 (23/04/24)
-- 更新了controlnet 1.1
-- 增加部分了自定义设置
-### v.1.1.3 (23/04/21)
-- 修复了出现怀疑挖矿提示框的问题
-- 部分单元格采用异步下载提高执行效率
-- 默认大模型换成了[Dark Sushi Mix](https://civitai.com/api/download/models/33482)
-- controlNet控制模型默认数量变为3
-### v.1.1.2 (23/04/17)
-- 修复了手机局部绘图图片width过大的问题
-### v.1.1.1 (23/04/12)
-- 更新了[CN_tag_trans](https://www.bilibili.com/video/BV1tg4y137mt/?spm_id_from=333.880.my_history.page.click&vd_source=931a87555c05909a4816745522b3ce74)
-- 增加了从png_info图片秒读秒填充的功能
